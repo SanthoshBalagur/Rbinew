@@ -9,7 +9,7 @@ require('./config/passport');
 const mongoose = require('mongoose');
 const flash = require('connect-flash');
 
-mongoose.connect('mongodb://SANTHOSH:santh@123@ds141657.mlab.com:41657/rbi');
+mongoose.connect('mongodb://rbi:rbi@ds141657.mlab.com:41657/rbi');
 const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
@@ -25,6 +25,7 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
+var port = process.env.PORT || 3000 ;
 app.listen(port, function () {
   console.log('Example app listening!');
 });
