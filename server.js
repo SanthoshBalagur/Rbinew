@@ -24,7 +24,10 @@ app.get('/logout', (req, res) => {
   req.logout();
   res.redirect('/');
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 37e28e2839bf3d55d45f57772ac0fa59a807c2bf
 var port = process.env.PORT || 3000 ;
 app.listen(port, function () {
   console.log('Example app listening!');
