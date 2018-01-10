@@ -53,11 +53,7 @@ class CreateOrder extends Component {
       {key: 'ht', value: 'High Tea', text: 'High Tea'},
       {key: 'rg', value: 'Retirement Gift', text: 'Retirement Gift'}
     ]
-    // const products = [
-    //   {key: 's', value: 'Savories', text: 'Savories'},
-    //   {key: 'c', value: 'Cookies', text: 'Cookies'},
-    //   {key: 'd', value: 'Dry Fruits', text: 'Dry Fruits'}
-    // ]
+    
     const Savories = [
       {key:'e', value:'Ragi crunchies', text:'Ragi Crunchies'},
       {key:'f', value:'channa mix',text:'Channa Mix'},
@@ -93,13 +89,13 @@ class CreateOrder extends Component {
       {key:'a',value:'Strawberry comix',text:'Strawberry comix'},
       {key:'c',value:'Cranberry mix',text:'Cranberry mix'},
       {key:'d',value:'Fiber rich',text:'Fiber rich'},
-      {key:'br',value:'Blueberry mix',text:'Blueberry mix'},]
+      {key:'bl',value:'Blueberry mix',text:'Blueberry mix'},]
     return(
     <div style={{margin: 2+'em',marginBottom: 100 + 'px'}}>
         <Display IF={this.state.display}>
           <Message success style={{marginTop:2+'em',marginBottom:2+'em'}}>Order is created successfully with order no => {this.state.orderNum}</Message>
         </Display>
-        
+      
       <Table>
         <Table.Header>
           <Table.Row>
